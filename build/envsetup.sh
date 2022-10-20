@@ -1,4 +1,4 @@
-function __print_lineage_functions_help() {
+function __print_liquid_functions_help() {
 cat <<EOF
 Additional LineageOS functions:
 - cout:            Changes directory to out.
@@ -83,7 +83,7 @@ function breakfast()
                 variant="userdebug"
             fi
 
-            lunch lineage_$target-$variant
+            lunch liquid_$target-$variant
         fi
     fi
     return $?
@@ -94,7 +94,7 @@ alias bib=breakfast
 function eat()
 {
     if [ "$OUT" ] ; then
-        ZIPPATH=`ls -tr "$OUT"/lineage-*.zip | tail -1`
+        ZIPPATH=`ls -tr "$OUT"/liquid-*.zip | tail -1`
         if [ ! -f $ZIPPATH ] ; then
             echo "Nothing to eat"
             return 1

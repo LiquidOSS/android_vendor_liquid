@@ -16,3 +16,5 @@
 # Includes support for:
 # 1) NvCPL / Application Profiles
 NV_ANDROID_FRAMEWORK_ENHANCEMENTS := true
+
+# SUS

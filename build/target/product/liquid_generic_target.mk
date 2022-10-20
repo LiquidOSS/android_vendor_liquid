@@ -12,10 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, vendor/lineage/config/common_car.mk)
-
-EMULATOR_VENDOR_NO_SENSORS := true
-EMULATOR_VENDOR_NO_SOUND := true
+$(call inherit-product, vendor/liquid/config/common_full_phone.mk)
 
 # Allow building otatools
 TARGET_FORCE_OTA_PACKAGE := true
